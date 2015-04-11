@@ -8,28 +8,28 @@ Meteor.startup(function () {
 
         // you need to have connection with Arduino board to run this demo app
         // or you can comment connections and devices and references in functions
-        connections: {
-          arduino: { adaptor: 'firmata', port: '/dev/ttyACM0' }
-        },
+        // connections: {
+        //   arduino: { adaptor: 'firmata', port: '/dev/ttyACM0' }
+        // },
 
-        devices: {
-          redLed: { driver: 'led', pin: 13 },
-          yellowLed: { driver: 'led', pin: 12 }
-        },
+        // devices: {
+        //   redLed: { driver: 'led', pin: 13 },
+        //   yellowLed: { driver: 'led', pin: 12 }
+        // },
 
         redLed: function () {
-            this.devices.redLed.toggle();
+            // this.devices.redLed.toggle();
             return 'Cylon ' + this.name + ' toggles red led';
         },
 
         yellowLed: function () {
-            this.devices.yellowLed.toggle();
+            // this.devices.yellowLed.toggle();
             return 'Cylon ' + this.name + ' toggles yellow led';
         },
 
         toggleAll: function () {
-            this.devices.redLed.toggle();
-            this.devices.yellowLed.toggle();
+            // this.devices.redLed.toggle();
+            // this.devices.yellowLed.toggle();
             return 'Cylon ' + this.name + ' toggles red and yellow led';
         },
 
